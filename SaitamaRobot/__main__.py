@@ -74,15 +74,16 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
+OwO get  incinerated with my amaterasu or 
+you might want to check out what else my sharingan can do 
 You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
-the things I can help you with.
+I live not to show you my mere existence 
+Take a look at the following to get an idea 
+of some of the things I can help you with.
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -100,12 +101,12 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/46e6d9dfcb3eb9eae95d9.jpg"
+SAITAMA_IMG = " https://telegra.ph/file/0bd0162458f6551219d90.mp4 "
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
+DONATE_STRING = """My ametarasu got extinguished by hearing that ,
+  glad to know you want to donate , but Itachi UchiHUH is actually a fork of Saitama and if you really want to donate \
+  then  You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada ,  \
+  doe  Supporting isnt always financial."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -222,7 +223,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="☑️ Add Saitama to your group",
+                                text="Use My Izanami On your group ",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -230,24 +231,24 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🚑 Support Group",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
+                                text="Akatsuki Support",
+                                url=f"https://t.me/itachiakatsukisupport",
                             ),
                             InlineKeyboardButton(
-                                text="🔔 Updates Channel",
-                                url="https://t.me/OnePunchUpdates",
+                                text="Akatsuki Updates",
+                                url="https://t.me/itachiakatsukiupdates",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🧾 Getting started guide",
-                                url="https://t.me/OnePunchUpdates/29",
+                                text="OwO,Know Your Place",
+                                url="https://t.me/itachiakatsukiupdates/14",
                             )
                         ],
                         [
                             InlineKeyboardButton(
                                 text="🗄 Source code",
-                                url="https://github.com/AnimeKaizoku/SaitamaRobot",
+                                url="https://github.com/intellectualmonke/itachiuhcihuh",
                             )
                         ],
                     ]
@@ -255,7 +256,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "Don't worry sharingan's working fine !\n<b>Using Sharingan since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
