@@ -74,8 +74,8 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-OwO get  incinerated with my amaterasu or 
-you might want to check out what else my sharingan can do 
+OwO get  incinerated with my amaterasu or /
+you might want to check out what else my sharingan can do /
 You can find my list of available commands with /help.
 """
 
@@ -101,7 +101,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = " https://telegra.ph/file/0bd0162458f6551219d90.mp4 "
+SAITAMA_IMG = "https://telegra.ph/file/179a57a6d4437ca258261.jpg"
 
 DONATE_STRING = """My ametarasu got extinguished by hearing that ,
   glad to know you want to donate , but Itachi UchiHUH is actually a fork of Saitama and if you really want to donate \
